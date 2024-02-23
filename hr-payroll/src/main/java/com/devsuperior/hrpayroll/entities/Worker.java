@@ -3,15 +3,9 @@ package com.devsuperior.hrpayroll.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 public class Worker implements Serializable{
-	private static final long serialVersionUID = 1L;
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private static final long serialVersionUID = 1L;	
+
 	private Long id;
 	private String name;
 	private Double dailyIncome;
